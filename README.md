@@ -1,36 +1,3 @@
----
-
-## Minimax Algorithm
-
-- **Introduced**: Early 20th century in Game Theory.  
-- **Key Contributor**: John von Neumann (1928) *Minimax Theorem*.  
-- **Adopted in AI**: 1950s onward, especially for Chess programs.  
-
-**Significance**:
-- Foundation for **adversarial search** in AI.
-- Base for modern **game-playing AI**.
-
-### Core Idea
-- Used for **two-player, zero-sum games**.
-- **Players**:
-  - **MAX** → tries to maximize the score.
-  - **MIN** → tries to minimize the score.
-- Strategy: *Choose the move that maximizes your minimum gain, assuming the opponent plays optimally.*
-
-### How it Works
-1. Construct a **game tree** with all possible moves.
-2. **Leaf nodes** → terminal states with evaluation scores.
-3. Work upward:
-   - **MAX node** picks the maximum child value.
-   - **MIN node** picks the minimum child value.
-4. **Root’s value** = best decision for the current player.
-
-### Limitation
-- Explores *all* possible nodes.  
-- **Time complexity**:  
-  \[
-  O(b^d) \quad \text{where } b = \text{branching factor}, \ d = \text{depth}
-  \]
 
 ---
 
@@ -44,8 +11,8 @@ An optimization of **Minimax** to reduce unnecessary exploration.
 - **Pruning Rule**: If at any point `α ≥ β`, stop exploring that branch.
 
 ### Complexity
-- **Worst case**: \(O(b^d)\) (same as Minimax).  
-- **Best case**: \(O(b^{d/2})\) (dramatic improvement).  
+- **Worst case**: `O(b^d)` (same as Minimax).  
+- **Best case**: `O(b^(d/2))` (dramatic improvement).  
 
 ### Process
 - Traverse game tree like Minimax.
@@ -61,12 +28,10 @@ An optimization of **Minimax** to reduce unnecessary exploration.
 ## Applications
 
 - **Classic Games**:
-  - Chess, Tic-Tac-Toe, Checkers.
+- Chess, Tic-Tac-Toe, Checkers.
 - **Video Games (NPC AI)**:
-  - Strategy/shooter games (enemy bots predict & adapt to player moves).
+- Strategy/shooter games (enemy bots predict & adapt to player moves).
 - **Cybersecurity (Adversarial ML)**:
-  - Defenders (security AI) vs Attackers (malware AI).  
+- Defenders (security AI) vs Attackers (malware AI).  
 - **Economics / Business**:
-  - Competitive pricing, bidding, and simulations.  
-
----
+- Competitive pricing, bidding, and simulations.
