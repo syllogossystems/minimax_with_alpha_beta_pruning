@@ -3,7 +3,7 @@
 ## Minimax Algorithm
 
 - **Introduced**: Early 20th century in Game Theory.  
-- **Key Contributor**: John von Neumann (1928) – *Minimax Theorem*.  
+- **Key Contributor**: John von Neumann (1928) *Minimax Theorem*.  
 - **Adopted in AI**: 1950s onward, especially for Chess programs.  
 
 **Significance**:
